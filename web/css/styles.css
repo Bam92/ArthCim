@@ -1,0 +1,33 @@
+body {
+	padding-top: 50px;
+	color: red;
+}
+
+
+.navbar-header a {
+	color: #965fc0;
+}
+.footer {
+	border-top: 1px solid #ccc;
+	padding-top: 10px;
+	text-align: center;
+
+}
+#connection {
+	color: #965fc0;
+}
+
+.jumbotron {
+	background-image: url("../img/hopital.jpeg");
+	background-repeat: no-repeat;
+	background-position: top right;
+	height: 350px;
+}
+
+.btn {
+	background-color: #3ec9cb;
+}
+
+.navbar-inverse .navbar-right > li > a {
+	color: #fff;
+}
