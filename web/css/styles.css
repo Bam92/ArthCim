@@ -7,27 +7,63 @@ body {
 .navbar-header a {
 	color: #965fc0;
 }
+
+header {
+	height: 70px;
+}
 .footer {
 	border-top: 1px solid #ccc;
 	padding-top: 10px;
 	text-align: center;
 
 }
-#connection {
+.call-to-action {
+	text-transform: uppercase;
+	color: red;
+	background-color: #3ec9cb;
+	line-height: 2em;
+}
+
+#call-to-action-find-dr {
+
+	margin-top: 35px;
+	margin-bottom: 35px;
+	height: 50px;
+
+}
+
+li a {
+	color: #fff;
+	text-decoration: none;
+
+}
+.jumbotron {
+	background-image: url("../img/hopital.JPG");
+	background-repeat: no-repeat;
+	background-position: top right;
+	height: 400px;
+}
+
+a button {
+	background-color: #3ec9cb;
+	text-align: center;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #fff;
+}
+
+/*####- Layout for doctors.php -####*/
+.page-title {
+	margin: 45px;
+	text-align: center;
+}
+
+h3 strong, .page-title h1, .text h3 {
 	color: #965fc0;
 }
 
-.jumbotron {
-	background-image: url("../img/hopital.jpeg");
-	background-repeat: no-repeat;
-	background-position: top right;
-	height: 350px;
-}
-
-.btn {
-	background-color: #3ec9cb;
-}
-
-.navbar-inverse .navbar-right > li > a {
-	color: #fff;
+.img-responsive {
+	height: 100px;
+	width: 150px;
 }
