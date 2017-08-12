@@ -1,11 +1,22 @@
         {% extends "layout.html.twig" %}
 
         {% block content %}
-        <div id="home-block" class="jumbotron">
-        <div class="container">
-        <h1><strong>Lomba</strong>RDV</h1>
-        <h3>prenez RDV où que vous soyez avec un médecin au CS Lombale</h3>
-          </div>
+        <div id="home-block" class="">
+        <div class="carousel slide carousel-fade" data-ride="carousel">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        </div>
+
+        <div class="title text-center">
+          <h1><strong>Pr Arthur Cimwanga Badibanga</strong></h1>
+          <h3>Docteur es Langues et literature anglaise en RD Congo</h3>
         </div>
 
       <div class="container">
@@ -14,19 +25,20 @@
           <h3>gagnez 30% de temps de secrétariat</h3>
         </section>
 
-        <section class="row page-content">
+        <section class="row page-content" id="what-we-are">
         <div class="col-md-3 col-xs-6">
            <div class="icon"><span class="fa fa-3x fa-user-md"></span></div>
            <div class="text">
-              <h3>Trouvez un medecin</h3>
-              <small>Lorem ipsum</small>
+              <h3>Trouvez un médecin</h3>
+              <small>parcourez la base de données de nos médecins et trouvez-en
+              un qui soit disponible</small>
            </div>
         </div>
         <div class="col-md-3 col-xs-6">
           <div class="icon"><span class="fa fa-3x fa-calendar"></span></div>
           <div class="text">
              <h3>Prenez rendez-vous</h3>
-             <small>Lorem ipsum</small>
+             <small>directement en ligne ou en appellant le médecin</small>
         </div>
         </div>
         <div class="clearfix visible-xs mb-20"></div>
@@ -34,18 +46,19 @@
           <div class="icon"><span class="fa fa-3x fa-medkit"></span></div>
           <div class="text">
              <h3>Voir le medecin</h3>
-             <small>Lorem ipsum</small>
+             <small>un SMS de rappel avec toutes les informations pratiques vous
+             sera envoyé la veille du rendez-vous !</small>
         </div>
         </div>
         <div class="col-md-3 col-xs-6">
           <div class="icon"><span class="fa fa-3x fa-lock"></span></div>
           <div class="text">
-             <h3>Votre securite</h3>
-             <small>Lorem ipsum</small>
+             <h3>Votre securité</h3>
+             <small>vos données sont protégées contre tout usage illicite</small>
         </div>
         </section>
 
-        <div id="call-to-action-find-dr" class="call-to-action col-md-offset-5 col-md-2">
+        <div id="call-to-action-find-dr" class="call-to-action col-md-offset-5 col-md-2" style="color:#fff;">
            <a href="/doctors">Trouvez un médecin</a>
         </div>
         </div>

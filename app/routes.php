@@ -1,9 +1,16 @@
 <?php
 
-$app->get('/', function () use ($app) {
-    return $app['twig']->render('home.html.twig');
-})->bind('home');
+$routes = array(
+    'home'       => array('url' => '/', 'template'       => 'home.html.twig'), // home page
+    'teach'      => array('url' => 'teach', 'template'   => 'teach.html.twig'),
+    'bio'        => array('url' => 'bio', 'template'   => 'bio.html.twig'),
+    'research'   => array('url' => 'research', 'template'   => 'research.html.twig'),
+    'service'    => array('url' => 'service', 'template'   => 'service.html.twig'),
+    'contact'    => array('url' => 'contact', 'template' => 'contact.html.twig')
+);
 
-$app->get('/doctors', function () use ($app) {
-    return $app['twig']->render('doctors.html.twig');
-})->bind('doctors');
+foreach ($routes as $routeName => $data) {
+    $app->get($data['url'], function() use($app, $data) {
+        return $app['twig']->render($data['template']);
+    })->bind($routeName);
+}
