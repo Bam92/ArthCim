@@ -1,7 +1,7 @@
         {% extends "layout.html.twig" %}
 
         {% block content %}
-        <div id="home-block" class="">
+        <div id="home-block">
         <div class="carousel slide carousel-fade" data-ride="carousel">
 
         <!-- Wrapper for slides -->
@@ -26,27 +26,58 @@
       <div class="container">
 
         <section class="row page-content" id="year-teaching">
-        <div class="col-md-3 col-xs-6">
-           <div class="icon"><span class="fa fa-3x fa-user-md"></span></div>
-           <div class="text">
-              <h3>Plus de .... ans dans l'enseignement supérieur et universitaire</h3>
-              <small>parcourez la base de données de nos médecins et trouvez-en
-              un qui soit disponible</small>
+        <div class="col-md-12">
+           <div class="icon"><span class="fa fa-3x fa-user-md"></span><br>
+            <h2>Plus de .... ans dans l'enseignement supérieur et universitaire</h2>
            </div>
+           <div class="text">
+            <p>Je suis dans l'enseignement supérieur et universitaire en Rep. dem.
+            du Congo.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
+           </div>
+           <!--CALL TO ACTION -->
+           <div class="col-md-6">
+            <a href="/teach" class="btn btn-primary">Parcourrez mes cours</a>
+           </dvi>
+           <div class="col-md-6">
+            <a href="/bio" class="btn btn-info">A propos de moi</a>
+           </dvi>
         </div>
-        <div class="col-md-3 col-xs-6">
-          <div class="icon"><span class="fa fa-3x fa-calendar"></span></div>
-          <div class="text">
-             <h3>Les cours</h3>
-             <small>Plusieurs universités et/ou institut supérieurs me
-             contacte pour mes différents cours</small>
-        </div>
+        </section>
+
+       <!-- MES OUVRAGES
+            Link to the bookshop
+       -->
+       <section class="row" id="home-books">
+        <header class="col-md-12 text-center">
+           <div class="icon section-title"><span class="fa fa-3x fa-user-md"></span><br>
+           <h2>Mes ouvrages</h2>
+           </div>
+           <p class="sub_title">
+            Je suis dans l'enseignement supérieur et universitaire en Rep. dem.
+            du Congo.
+           </p>
+        </header>
+
+        <!--Two books published -->
+        <div class="list-books">
+         <div class="col-xs-12 col-md-6" id="book1">
+          <a href=""><img src="{{ asset('/img/1.jpg') }}" alt="Mbororo"></a>
+          <p class="text-center"><a href="" class="btn btn-info">Acheter</a></p>
+         </div>
+         <div class="col-xs-12 col-md-6" id="book2">
+          <a href=""><img src="{{ asset('/img/5.jpg') }}" alt="Mbororo"></a>
+          <p class="text-center"><a href="" class="btn btn-info">Acheter</a></p>
+         </div>
         </div>
 
         </section>
 
-
+        <section class="row text-center" id="home-contact">
            <a class="btn btn-warning" href="/contact">Contactez-moi</a>
+        </section>
         </div>
       </div>
         {% endblock %}
