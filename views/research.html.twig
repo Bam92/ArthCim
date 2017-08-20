@@ -2,28 +2,101 @@
 
         {% block content %}
         <div class="container">
-        <div class="well" style="margin-top:30px;">
-        <div class="text-center"><strong>Connectez-vous</strong></div>
-    <form class="form-signin form-horizontal" role="form" action="#" method="post">
-        <div class="form-group">
-            <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-            <input type="text" name="_username" value="Type your username" class="form-control" placeholder="Enter your username" required autofocus>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-                <input type="password" name="_password" class="form-control" placeholder="Enter your password" required>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 text-center">
-                <button type="submit" class="btn btn-default btn-primary" action="signup.php" method="post">
-                <span class="glyphicon glyphicon-log-in"></span> Se connecter
-                </button>
-            </div>
-        </div>
-    </form>
-</div>
 
-      </div>
+        <section id="search-domain" class="col-md-12 section-important">
+        <header class="text-center">
+          <p class="heading-icon">
+           <span class="fa fa-3x fa-user-md"></span>
+          </p>
+           <h2 class="heading-title">Domaines de recherche</h2>
+
+           <p class="sub-title">
+            Ce sur quoi mes travaux portent
+           </p>
+        </header>
+        <div class="content col-md-offset-1 col-md-10">
+        <ul>
+         <li>Sociolinguistique</li>
+         <li>Lexicologie</li>
+         <li>Syntaxe</li>
+         <li>Stylistique anglaise</li>
+         <li>Linguistique appliquée à l’enseignement de l’anglais</li>
+        </ul>
+
+        </div>
+        </section>
+
+        <section id="books" class="col-md-12 section-important">
+         <header class="text-center">
+           <p class="heading-icon">
+            <span class="fa fa-3x fa-user-md"></span>
+           </p>
+            <h2 class="heading-title">Mes ouvrages</h2>
+
+            <p class="sub-title">
+             Je suis dans l'enseignement supérieur et universitaire en Rep. dem.
+             du Congo.
+            </p>
+         </header>
+
+         <!--Two books published -->
+         <div class="list-books">
+          <div class="col-xs-12 col-md-6 book-item" id="book1">
+           <a href=""><img src="{{ asset('/img/1.jpg') }}" alt="Mbororo"></a>
+           <p class="text-center"><a href="" class="btn btn-info">Acheter</a></p>
+          </div>
+          <div class="col-xs-12 col-md-6 book-item" id="book2">
+           <a href=""><img src="{{ asset('/img/5.jpg') }}" alt="Mbororo"></a>
+           <p class="text-center"><a href="" class="btn btn-info">Acheter</a></p>
+          </div>
+         </div>
+
+         </section>
+
+         <section id="scientific" class="col-md-12 section-important">
+         <header class="text-center">
+           <p class="heading-icon">
+            <span class="fa fa-user-md"></span>
+           </p>
+            <h2 class="heading-title">Articles scientifiques</h2>
+
+            <p class="sub-title">
+             Je suis auteur de plusieurs publications scientifiques
+            </p>
+         </header>
+
+         <div class="content col-md-offset-1 col-md-10">
+         <ul>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+         </ul>
+         <p class="text-center"><a href="#">Voir tous les articles</a></p>
+         </div>
+         </section>
+
+         <section id="thesis" class="col-md-12 section-important">
+         <header class="text-center">
+           <p class="heading-icon">
+            <span class="fa fa-user-md"></span>
+           </p>
+            <h2 class="heading-title">Memoires</h2>
+
+            <p class="sub-title">
+             Ci-dessous la liste des memoires que j'ai diriges
+            </p>
+         </header>
+
+         <div class="content col-md-offset-1 col-md-10">
+         <ul>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+         </ul>
+
+         </div>
+         </section>
+        </div>
         {% endblock %}

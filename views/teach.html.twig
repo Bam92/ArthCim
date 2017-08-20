@@ -1,112 +1,62 @@
-        {% extends "layout.html.twig" %}
+{% extends "layout.html.twig" %}
 
-        {% block content %}
-        <div class="container">
-        <section class="row page-title">
-            <h1>Selectionnez parmis nos medecin avec qui vous voulez prendre rendez-vous</h1>
-            <h3>Ils sont chacun expert dans son domaine</h3>
-        </section>
+{% block content %}
+ <div class="container">
+ <section id="course-now" class="col-md-12 section-important">
+ <header class="text-center">
+   <p class="heading-icon">
+    <span class="fa fa-user-md"></span>
+   </p>
+    <h2 class="heading-title">Cours actuels</h2>
 
-        <section class="row page-content">
-            <p class="col-md-2">
-               <img title="Dr" class="img-responsive" src="{{ asset('/img/dr-miniature.jpg') }}" alt="Dr "/>
-            </p>
-            <div class="col-md-10">
-               <h3><strong>Dr Jean-Paul Lombale, gynécologie</strong></h3>
-               <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-               </div>
-               <div class="key-words"><strong>Mots-cles : </strong>gynéco, obstétric</div>
-               <div class="row">
-               <div class="get-rdv col-md-6"><a title="prendre RDV" href="/paulin">Prendre rendez-vous</a></div>
-               <div class="col-md-6 pull right">Tel.: 0992046568</div>
-               </div>
-            </div>
-        </section>
+    <p class="sub-title">
+     Ci-dessous les cours que j'enseigne actuellement
+    </p>
+ </header>
 
-        <section class="row page-content">
-            <p class="col-md-2">
-               <img title="Dr" class="img-responsive" src="{{ asset('/img/dr-miniature.jpg') }}" alt="Dr "/>
-            </p>
-            <div class="col-md-10">
-               <h3><strong>Dr Paulin Onautshu, specialite</strong></h3>
-               <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-               </div>
-               <div class="key-words"><strong>Mots-cles : </strong>dermato, peau</div>
-               <div class="row">
-               <div class="get-rdv col-md-6"><a title="prendre RDV" href="/paulin">Prendre rendez-vous</a></div>
-               <div class="col-md-6 pull right">Tel.: 0992046568</div>
-               </div>
-            </div>
-        </section>
+ <div class="content col-md-offset-1 col-md-10">
+ <ul>
+  <li>Lorem
+  </li>
+  <li>Lorem</li>
+  <li>Lorem</li>
+  <li>Lorem
+  </li>
+ </ul>
 
-        <section class="row page-content">
-            <p class="col-md-2">
-               <img title="Dr" class="img-responsive" src="{{ asset('/img/dr-miniature.jpg') }}" alt="Dr "/>
-            </p>
-            <div class="col-md-10">
-               <h3><strong>Dr Papy Bengana, specialite</strong></h3>
-               <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-               </div>
-               <div class="key-words"><strong>Mots-cles : </strong>dermato, peau</div>
-               <div class="row">
-               <div class="get-rdv col-md-6"><a title="prendre RDV" href="/paulin">Prendre rendez-vous</a></div>
-               <div class="col-md-6 pull right">Tel.: 0992046568</div>
-               </div>
-            </div>
-        </section>
+ </div>
+ </section>
 
-        <section class="row page-content">
-            <p class="col-md-2">
-               <img title="Dr" class="img-responsive" src="{{ asset('/img/dr-miniature.jpg') }}" alt="Dr "/>
-            </p>
-            <div class="col-md-10">
-               <h3><strong>Dr Esdras Kasereka, specialite</strong></h3>
-               <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-               </div>
-               <div class="key-words"><strong>Mots-cles : </strong>dermato, peau</div>
-               <div class="row">
-               <div class="get-rdv col-md-6"><a title="prendre RDV" href="/paulin">Prendre rendez-vous</a></div>
-               <div class="col-md-6 pull right">Tel.: 0992046568</div>
-               </div>
-            </div>
-        </section>
+ <!--OLD COURSES -->
+ <section id="course-old" class="col-md-12 section-important">
+ <header class="text-center">
+   <p class="heading-icon">
+    <span class="fa fa-user-md"></span>
+   </p>
+    <h2 class="heading-title">Anciens cours</h2>
 
-        <section class="row page-content">
-            <p class="col-md-2">
-               <img title="Dr" class="img-responsive" src="{{ asset('/img/dr-miniature.jpg') }}" alt="Dr "/>
-            </p>
-            <div class="col-md-10">
-               <h3><strong>prenom Nom Dr, specialite</strong></h3>
-               <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-               </div>
-               <div class="key-words"><strong>Mots-cles : </strong>dermato, peau</div>
-               <div class="row">
-               <div class="get-rdv col-md-6"><a title="prendre RDV" href="/paulin">Prendre rendez-vous</a></div>
-               <div class="col-md-6 pull right">Tel.: 0992046568</div>
-               </div>
-            </div>
-        </section>
+    <p class="sub-title">
+     Ici sont les cours que j'ai du anime par le passe
+    </p>
+ </header>
 
+ <div class="content col-md-offset-1 col-md-10">
+ <ul>
+ <li>Lorem
+ </li>
+ <li>Lorem</li>
+ <li>Lorem</li>
+ <li>Lorem
+ </li>
+ </ul>
 
-      </div>
-        {% endblock %}
+ </div>
+ </section>
+
+ <section class="row text-center" id="home-contact">
+ <p>Avez-vous besoin de moi dans votre universite?</p>
+    <a class="btn btn-warning" href="/contact">Contactez-moi</a>
+ </section>
+
+ </div>
+{% endblock %}

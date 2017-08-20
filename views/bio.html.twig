@@ -2,28 +2,129 @@
 
         {% block content %}
         <div class="container">
-        <div class="well" style="margin-top:30px;">
-        <div class="text-center"><strong>Connectez-vous</strong></div>
-    <form class="form-signin form-horizontal" role="form" action="#" method="post">
-        <div class="form-group">
-            <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-            <input type="text" name="_username" value="Type your username" class="form-control" placeholder="Enter your username" required autofocus>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-                <input type="password" name="_password" class="form-control" placeholder="Enter your password" required>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 text-center">
-                <button type="submit" class="btn btn-default btn-primary">
-                <span class="glyphicon glyphicon-log-in"></span> Se connecter
-                </button>
-            </div>
-        </div>
-    </form>
-</div>
+        <section id="short-bio" class="section-important">
+        <header class="text-center">
+          <p class="heading-icon">
+           <span class="fa fa-user-md"></span>
+          </p>
+           <h2 class="heading-title">Qui suis-je?</h2>
 
-      </div>
+           <p class="sub-title">
+            Decouvrez mon portrait en bref<!--Je suis professeur permanent a l'
+            <a href="unikis.ac.cd" alt="Universite de Kisangani">
+            Universite de Kisangani-->
+            </a>
+           </p>
+        </header>
+        <div class="content col-md-offset-1 col-md-10">
+        <p class="col-md-5 me-img">
+        <img src="{{ asset('/img/5.jpg') }}" alt="Moi">
+        </p>
+        <div class="col-md-5 me-content">
+         voir livre: J'ai ete forme en RD Congo et dans plusieurs pays...
+
+         <hr>
+         <p>Contact</p>
+         <p>Universite de Kisangani,
+         Fac des Lettres.
+         Kisangani,
+         R.D.Congo
+         </p>
+         <ul>
+         <li><span class="fa fa-user-md"></span> +243 0992097516</li>
+         <li><span class="fa fa-user-md"></span> +243 0992097516</li>
+         <li><span class="fa fa-user-md"></span>
+         <a href="mailto:arthur.cimwanga@unikis.ac.cd"
+         alt="arthur.cimwanga@unikis.ac.cd">arthur.cimwanga(at)unikis.ac.cd</a>
+         </li>
+
+        </div>
+
+        </div>
+
+        </section>
+
+        <section id="study" class="col-md-12 section-important">
+        <header class="text-center">
+          <p class="heading-icon">
+           <span class="fa fa-user-md"></span>
+          </p>
+           <h2 class="heading-title">Ma formation</h2>
+
+           <p class="sub-title">
+            J'ai ete forme en RD Congo et dans plusieurs pays etrangers
+           </p>
+        </header>
+
+        <div class="content col-md-offset-1 col-md-10">
+        <ul>
+         <li>2007 - 2010 | Ph. D., Litterature anglaise, Universite de Kisangani;
+         <br>Directeur: Pr Dr Cyprien Busaki, avec Distinction <br>
+         Sujet: <strong>English language imperialism in the world and in DRC,
+         socio-linguistic issues of some world and congolese languages
+         coexistence</strong>
+         </li>
+         <li>2007 | DESS, Langues et litteratures anglaises,
+         Universite de Kisangani; avec Distinction</li>
+         <li>19x - 19x | Licence, Langues et litteratures anglaises,
+         Universite de Kisangani?; avec Distinction</li>
+         <li>1981 | Brevet de technicien en cleaning building du Swaziland,
+         Peace corps volunteers
+         </li>
+        </ul>
+
+        </div>
+        </section>
+
+        <!--WORKSHOP -->
+        <section id="workshop" class="col-md-12 section-important">
+        <header class="text-center">
+          <p class="heading-icon">
+           <span class="fa fa-user-md"></span>
+          </p>
+           <h2 class="heading-title">Workshop</h2>
+
+           <p class="sub-title">
+            J'ai participe a plusieurs ateliers, seminaire, conference tant
+            national qu'international
+           </p>
+        </header>
+
+        <div class="content col-md-offset-1 col-md-10">
+        <ul>
+         <li>
+          <em>Stratégies impliquant les universités africaines dans la
+          globalisation</em>, Londres (2005) <span class="pull-right workshop-type">Séminaire</span>
+         </li>
+         <li>2007 | DESS, Langues et litteratures anglaises,
+         Universite de Kisangani; avec Distinction</li>
+         <li>19x - 19x | Licence, Langues et litteratures anglaises,
+         Universite de Kisangani?; avec Distinction</li>
+         <li>1981 | Brevet de technicien en cleaning building du Swaziland,
+         Peace corps volunteers
+         </li>
+        </ul>
+
+        </div>
+        </section>
+
+        <section id="workshop" class="col-md-12 section-important">
+        <header class="text-center">
+          <p class="heading-icon">
+           <span class="fa fa-user-md"></span>
+          </p>
+           <h2 class="heading-title">Universites ou ecoles partenaires</h2>
+
+           <p class="sub-title">
+            Voici quelques universites avec lesquelles je collabore
+           </p>
+        </header>
+
+        <div class="col-md-offset-1 col-md-10">
+        <!-- be inspired by oc -->
+Lorem
+
+        </div>
+        </section>
+       </div>
         {% endblock %}

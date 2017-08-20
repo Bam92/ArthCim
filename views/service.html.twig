@@ -1,107 +1,55 @@
-        {% extends "layout.html.twig" %}
+{% extends "layout.html.twig" %}
 
-        {% block content %}
-        <div class="jumbotron">
-        <div class="container">
-        <div class="row">
-        <p class="col-md-2">
-           <img title="Dr" class="img-responsive" src="{{ asset('/img/dr-miniature.jpg') }}" alt="Dr "/>
-        </p>
-        <div class="col-md-10">
-           <h3><strong>Dr Jean-Paul Lombale, gynécologie</strong></h3>
-           <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-           </div>
-           <div class="key-words"><strong>Mots-cles : </strong>gynéco, obstétric</div>
-           <div class="row">
-           <div class="col-md-6 pull right">Tel.: 0992046568</div>
-           </div>
-           <div class="col-md-offset-3 col-md-3 take-this-rdv">
-           <strong>1er RDV POSSIBLE</strong><br />
-           Lundi 31 juillet 2017<br />
-           <a href="http://localhost/LombaTest/signup.php"><button class="call-to-action btn btn-primary">Prendre ce RDV</button></a>
-           </div>
-        </div>
-        </div>
-        </div>
-        </div>
+{% block content %}
+<div class="container">
 
-      <div class="container">
-        <section class="row page-title">
-          <h1>Prenez rendez-vous avec <strong>Dr Jean-Paul Lombale</stron></h1>
-        </section>
+<section id="university-in" class="col-md-12 section-important">
+<header class="text-center">
+  <p class="heading-icon">
+   <span class="fa fa-3x fa-user-md"></span>
+  </p>
+   <h2 class="heading-title">Postes universitaires</h2>
 
-        <section class="page-content meet-dr" id="meet-dr-paulin">
-        <div class="row">
-        <h3 class="text-center">Quel est le motif de votre rendez-vous? <span class="badge">1</span></h3>
-        <form class="form-horizontal col-md-offset-3 col-md-6">
-           <div class="row">
-             <div class="form-group">
-               <select class="form-control">
-                  <option>Sélectionnez le motif de RDV</option>
-                  <option>Première consultation</option>
-                  <option>Gynécologique</option>
-                  <option>Certificat sport</option>
-               </select>
-             </div>
-           </div>
-        </form>
-        </div>
-       <div class="row">
-        <h3 class="text-center">Disponibilité du Dr ...<span class="badge">2</span></h3>
+   <p class="sub-title">
+    Lorem
+   </p>
+</header>
+<div class="content col-md-offset-1 col-md-10">
+<div class="service">
+<p class="poste">Vice-Doyen charge de la recherche, fac. des lettres, Unikis</p>
+<p class="poste-description">Depuis 201x je suis en cha blalbla</p>
+</div>
+<div class="service">
+<p class="poste">Vice-Doyen charge de la recherche, fac. des lettres, Unikis</p>
+<p class="poste-description">Depuis 201x je suis en cha blalbla</p>
+</div>
 
-        <table class="table">
-        <caption>
-          <h4 class="text-center"> ... Jean-Paul </h4>
-        </caption>
-        <thead>
-        <tr>
-          <th> Lundi </th>
-          <th> Mardi </th>
-          <th> Mercredi </th>
-          <th> Jeudi </th>
-        </tr>
-        </thead>
-        <tbody>
-          <tr>
-             <td>8h00</td>
-             <td>14h00</td>
-             <td>12h00</td>
-             <td>12h00</td>
-          </tr>
+</div>
+</section>
 
-          <tr>
-             <td>9h00</td>
-             <td>15h00</td>
-             <td>13h00</td>
-             <td>13h00</td>
-          </tr>
+ <section id="university-out" class="col-md-12 section-important">
+ <header class="text-center">
+   <p class="heading-icon">
+    <span class="fa fa-user-md"></span>
+   </p>
+    <h2 class="heading-title">Postes extra-universitaire</h2>
 
-          <tr>
-             <td>10h00</td>
-             <td>16h00</td>
-             <td>14h00</td>
-             <td>14h00</td>
-          </tr>
+    <p class="sub-title">
+     Lorem
+    </p>
+ </header>
 
-          <tr>
-             <td>11h00</td>
-             <td>17h00</td>
-             <td>-</td>
-             <td>15h00</td>
-          </tr>
-          <tr>
-             <td>12h00</td>
-             <td>18h00</td>
-             <td>-</td>
-             <td>16h00</td>
-          </tr>
-        </tbody>
-        </table>
-       </div>
-        </section>
-        </div>
-        {% endblock %}
+ <div class="content col-md-offset-1 col-md-10">
+ <div class="service">
+ <p class="poste">Vice-Doyen charge de la recherche, fac. des lettres, Unikis</p>
+ <p class="poste-description">Depuis 201x je suis en cha blalbla</p>
+ </div>
+ <div class="service">
+ <p class="poste">Vice-Doyen charge de la recherche, fac. des lettres, Unikis</p>
+ <p class="poste-description">Depuis 201x je suis en cha blalbla</p>
+ </div>
+
+ </div>
+ </section>
+</div>
+{% endblock %}
